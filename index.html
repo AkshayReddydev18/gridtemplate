@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div.container {
+        /* background-color: rgb(190, 177, 177); */
+        display: grid;
+        row-gap: 10px;
+      }
+
+      #hamberger {
+        height: 30px;
+        width: 30px;
+      }
+      div.head {
+        display: flex;
+        justify-content: space-between;
+        font-size: 30px;
+        padding: 10px 20px 10px 20px;
+        position: sticky;
+        top: 0px;
+        z-index: 1;
+        background-color: white;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+      }
+      div.main {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px;
+        row-gap: 40px;
+        column-gap: 10px;
+        justify-content: center;
+        overflow: scroll;
+        scrollbar-width: none;
+      }
+
+      div.box {
+        display: flex;
+        position: relative;
+        height: 400px;
+        width: 245px;
+      }
+      img {
+        height: 330px;
+        width: 250px;
+        border-radius: 5px;
+      }
+      p#para {
+        position: absolute;
+        top: 310px;
+        columns: 250px 1;
+        text-align: center;
+        font-size: 20px;
+      }
+      p#parag {
+        position: absolute;
+        top: 355px;
+      }
+      div.bdy {
+        display: flex;
+        justify-content: center;
+        border-color: transparent;
+      }
+      .btn {
+        border-color: transparent;
+      }
+      button:hover {
+        background-color: rgb(161, 163, 163);
+        border-color: transparent;
+      }
+      div.about {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        /* background-color: bisque; */
+      }
+      p#about {
+        font-style: italic;
+      }
+      #te10 {
+        width: 320px;
+        height: 300px;
+      }
+      div.footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: start;
+        /* background-color: antiquewhite; */
+      }
+      .foot1,
+      .foot2,
+      .foot3 {
+        width: 390px;
+        /* height: 300px; */
+        padding: 10px;
+      }
+      .foot21,
+      .foot22 {
+        padding: 10px;
+      }
+      #foot {
+        height: 50px;
+        width: 50px;
+      }
+
+      .foot3 {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .foot21:hover {
+        background-color: rgb(157, 211, 232);
+      }
+      .foot22:hover {
+        background-color: rgb(157, 211, 232);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="head">
+        <div><img id="hamberger" src="./menu.png" alt="hamberger" /></div>
+        <div id="food">The Food</div>
+        <div><a href="mailto:thefood@gmail.com">Mail</a></div>
+      </div>
+      <div class="main" id="fd">
+        <div class="box">
+          <img id="image" src="./te1.jpg" alt="te1" />
+          <p id="para">The Perfect Sandwich,A Real NYC Classic</p>
+          <p id="parag">
+            Just some random text, lorem ipsum text praesent tincidunt ipsum
+            lipsum.
+          </p>
+        </div>
+        <div class="box">
+          <img id="image" src="./te2.jpg" alt="te2" />
+          <p id="para">Let Me Tell You About This Steak</p>
+          <p id="parag">
+            Once again, some random text to lorem lorem lorem lorem ipsum text
+            praesent tincidunt ipsum lipsum.
+          </p>
+        </div>
+        <div class="box">
+          <img id="image" src="./te3.jpg" alt="te3" />
+          <p id="para">Cherries, interrupted</p>
+          <p id="parag">
+            Lorem ipsum text praesent tincidunt ipsum lipsum.What else?
+          </p>
+        </div>
+        <div class="box">
+          <img id="image" src="./te4.jpg" alt="te4" />
+          <p id="para">Once Again, Robust Wine and Vegetable Pasta</p>
+          <p id="parag">Lorem ipsum text praesent tincidunt ipsum lipsum</p>
+        </div>
+        <div class="box">
+          <img id="image" src="./te5.jpg" alt="te5" />
+          <p id="para">All I Need Is a Popsicle.</p>
+          <p id="parag">Lorem ipsum text praesent tincidunt ipsum lipsum</p>
+        </div>
+        <div class="box">
+          <img id="image" src="./te6.jpg" alt="te6" />
+          <p id="para">Salmon For Your Skin</p>
+          <p id="parag">
+            Once again, some random text to lorem lorem lorem lorem ipsum text
+            praesent tincidunt ipsum lipsum.
+          </p>
+        </div>
+        <div class="box">
+          <img id="image" src="./te7.jpg" alt="te" />
+          <p id="para">The Perfect Sandwich, A Real Classic</p>
+          <p id="parag">
+            Just some random text, lorem ipsum text praesent tincidunt ipsum
+            lipsum.
+          </p>
+        </div>
+        <div class="box">
+          <img id="image" src="./te8.jpg" alt="te8" />
+          <p id="para">Le French</p>
+          <p id="parag">
+            Lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.
+          </p>
+        </div>
+      </div>
+      <div class="bdy">
+        <a href="#fd"
+          ><div class="btn1"><button><<</button></div></a
+        >
+        <a href="#fd"
+          ><div class="btn2"><button>1</button></div></a
+        >
+        <a href="#fd"
+          ><div class="btn3"><button>2</button></div></a
+        >
+        <a href="#fd"
+          ><div class="btn4"><button>3</button></div></a
+        >
+        <a href="#fd"
+          ><div class="btn5"><button>4</button></div></a
+        >
+        <a href="#fd"
+          ><div class="btn6"><button>5</button></div></a
+        >
+        <a href="#fd"
+          ><div class="btn7"><button>>></button></div></a
+        >
+      </div>
+      <div class="about">
+        <div class="about1"><h2>About Me, The Food Man</h2></div>
+        <div class="about2"><img id="te10" src="./te10.jpg" alt="te10" /></div>
+        <div class="about3"><h3>I am Who I Am!</h3></div>
+        <div class="about4">
+          <p id="about">With Passion For Real, Good Food</p>
+        </div>
+        <div class="adout5">
+          Just me, myself and I, exploring the universe of unknownment. I have a
+          heart of love and an interest of lorem ipsum and mauris neque quam
+          blog. I want to share my world with you. Praesent tincidunt sed tellus
+          ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies
+          congue gravida diam non fringilla. Praesent tincidunt sed tellus ut
+          rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies
+          congue gravida diam non fringilla.
+        </div>
+      </div>
+      <div class="footer">
+        <div class="foot1">
+          <label for="">FOOTER</label>
+          <p>
+            Praesent tincidunt sed tellus ut rutrum. Sed vitae justo
+            condimentum, porta lectus vitae, ultricies congue gravida diam non
+            fringilla.
+          </p>
+        </div>
+        <div class="foot2">
+          <label for="">BLOG POSTS</label>
+          <div class="foot21">
+            <img id="foot" src="./te11.jpg" alt="te11" />
+            <span><b>Lorem</b></h3>
+            <span>Sed mattis nunc</span>
+          </div>
+          <div class="foot22">
+            <img src="./te12.jpg" alt="te12" id="foot" />
+            <span><b>Ipsum</b></span>
+            <span>Praes tinci sed</span>
+          </div>
+        </div>
+        <div class="foot3">
+          POPULAR TAGS
+          <div>
+            <button>Travel</button>
+            <button>New York</button>
+            <button>Drinks</button>
+            <button>France</button>
+            <button>Salmon</button>
+            <button>Dinner</button>
+            <button>Cuisine</button>
+            <button>Chicken</button>
+            <button>Flavors</button>
+            <button>Ideas</button>
+            <button>Dressing</button>
+            <button>Fried</button>
+            <button>Fish</button>
+            <button>Duck</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
